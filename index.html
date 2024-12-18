@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web development assignments Links Page</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Welcome to My Links Page</h1>
+    <h5>Below is a list of my web development assignments</52>
+    
+    <div class="link-container">
+        <a class="link" target="tab" href="https://bon789.github.io/Biography-page/">Biography page</a>
+        <a class="link" target="tab" href="https://bon789.github.io/Forms/">Signup and sign-in form</a>
+        <a class="link" target="tab" href="https://bon789.github.io/Survey/">Library survey form</a>
+        <a class="link" target="tab" href="https://bon789.github.io/timer/">Countdown Timer</a>
+        <a class="link" target="tab" href="https://papa-johnson.github.io/Platform/Home%20Page/">E-Learning Platform</a>
+        <a class="link" href="./Landing-page.pdf.pdf" target="_blank">Figma web design</a>
+    </div>
+
+    <script>
+        const links = document.querySelectorAll('.link');
+        links.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.transform = 'scale(1.1)';
+            });
+            link.addEventListener('mouseout', () => {
+                link.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+
+</body>
+</html>
